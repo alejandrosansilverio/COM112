@@ -111,15 +111,10 @@ void merge(int *v, int inicio, int meio, int fim,int *comp,int (*mov))
                     temp[i]=v[p1++];
                 else
                     temp[i]=v[p2++];
-                (*mov)++;
-                if(p1>meio){
+                if(p1>meio)
                   fim1=1;
-                  (*mov)++;
-                }
-                if(p2>fim){
+                if(p2>fim)
                   fim2=1;
-                  (*mov)++;
-                }
                 (*comp) += 2;
             }else
             {
@@ -128,7 +123,7 @@ void merge(int *v, int inicio, int meio, int fim,int *comp,int (*mov))
                     temp[i]=v[p1++];
                 else
                     temp[i]=v[p2++];
-                    (*mov)++;
+                    
             }    
         }
         for(j=0, k=inicio;j<tamanho;j++, k++){
