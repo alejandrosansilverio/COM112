@@ -57,7 +57,7 @@ int main()
     default: 
       printf("Numero invalido");
   } 
-}while(opcao!=5);
+}while(opcao!=6);
 return 0;
 }
 
@@ -92,6 +92,7 @@ int relatorio(int tam) //imprime informações do arquivo
         printf("Arquivo vazio");
         return 1;
     }
+    rewind(arq);
     while ((fgets(s, 50, arq)) != NULL)
     { //Ler o arquivo linha por linha e imprime na tela
         printf("\n%s\n", s);
