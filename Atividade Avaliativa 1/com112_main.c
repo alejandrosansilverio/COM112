@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "com_112file.h"
-#include "com_112sort.h"
+#include "com112_file.h"
+#include "com112_sort.h"
 
 
 int menu();
